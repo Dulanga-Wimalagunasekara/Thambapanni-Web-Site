@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FD5D14;
+    --primary: #5a5a5a;
     --secondary: #FDBE33;
     --light: #F4F6F8;
     --dark: #040F28;
@@ -270,6 +270,10 @@
     transform: skew(40deg);
 }
 
-#brandName {
+.gold{
     color: gold;
+}
+
+.black {
+    background-color: black;
 }
