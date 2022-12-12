@@ -1,6 +1,13 @@
 (function ($) {
     "use strict";
-    
+
+    const topBar = document.getElementById('topBar');
+    const team = document.getElementById('team');
+    const services = document.getElementById('services');
+    const projects = document.getElementById('projects');
+    const contact = document.getElementById('contact');
+    const feedbacks = document.getElementById('feedbacks');
+
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -65,27 +72,27 @@
     });
 
     $("#spnAbout").click(function() {
-        document.getElementById('team').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        team.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     });
 
     $("#spnService").click(function() {
-        document.getElementById('services').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        services.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     });
 
     $("#spnProjects").click(function() {
-        document.getElementById('projects').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        projects.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     });
 
     $("#spnContact").click(function() {
-        document.getElementById('contact').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        contact.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     });
 
     $("#spnFeedbacks").click(function() {
-        document.getElementById('feedbacks').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        feedbacks.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     });
 
     $("#spnHome").click(function() {
-        document.getElementById('carousel').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        topBar.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     });
 
 
