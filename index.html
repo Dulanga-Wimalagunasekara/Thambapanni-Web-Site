@@ -40,7 +40,8 @@
                     <i class="bi bi-geo-alt fs-1 text-primary me-3"></i>
                     <div class="text-start">
                         <h6 class="text-uppercase fw-bold gold">Our Office</h6>
-                        <span>Kamburupitiya</span>
+                        <span>No. 11, Leads Housing, Ratalankawatta,
+                            Mapalana, Sri Lanka</span>
                     </div>
                 </div>
             </div>
@@ -49,7 +50,7 @@
                     <i class="bi bi-envelope-open fs-1 text-primary me-3"></i>
                     <div class="text-start">
                         <h6 class="text-uppercase fw-bold gold">Email Us</h6>
-                        <span>thambapanni@gmail.com</span>
+                        <span>info@thambapanni.live</span>
                     </div>
                 </div>
             </div>
@@ -78,20 +79,25 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.html" class="nav-item nav-link active"><span class="gold">Home</span></a>
-                    <a href="about.html" class="nav-item nav-link"><span class="gold">About</span></a>
-                    <a href="service.html" class="nav-item nav-link"><span class="gold">Service</span></a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span class="gold">Pages</span></a>
-                        <div class="dropdown-menu m-0">
-                            <a href="project.html" class="dropdown-item">Our Project</a>
-                            <a href="team.html" class="dropdown-item">The Team</a>
-                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                            <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link bg-gradient text-white px-5 ms-3 d-none d-lg-block"><span class="gold">Contact</span><i class="bi bi-arrow-right"></i></a>
+<!--                    <a href="index.html" class="nav-item nav-link active itmSpan"><span class="gold itmSpan">Home</span></a>-->
+                    <span id="spnHome" class="nav-item nav-link itmSpan">Home</span>
+                    <span id="spnAbout" class="nav-item nav-link itmSpan">About</span>
+                    <span id="spnService" class="nav-item nav-link itmSpan">Service</span>
+                    <span id="spnProjects" class="nav-item nav-link itmSpan">Projects</span>
+                    <span id="spnFeedbacks" class="nav-item nav-link itmSpan">Feedbacks</span>
+                    <span id="spnContact" class="nav-item nav-link itmSpan">Contact<i class="bi bi-arrow-right"></i></span>
+<!--                    <a href="service.html" class="nav-item nav-link"><span class="gold">Service</span></a>-->
+<!--                    <div class="nav-item dropdown">-->
+<!--                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><span class="gold">Pages</span></a>-->
+<!--                        <div class="dropdown-menu m-0">-->
+<!--                            <a href="project.html" class="dropdown-item">Our Project</a>-->
+<!--                            <a href="team.html" class="dropdown-item">The Team</a>-->
+<!--                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>-->
+<!--                            <a href="blog.html" class="dropdown-item">Blog Grid</a>-->
+<!--                            <a href="detail.html" class="dropdown-item">Blog Detail</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <a href="contact.html" class="nav-item nav-link bg-gradient text-white px-5 ms-3 d-none d-lg-block"><span class="gold">Contact</span><i class="bi bi-arrow-right"></i></a>-->
                 </div>
             </div>
         </nav>
@@ -100,7 +106,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0">
+    <div id="carousel" class="container-fluid p-0">
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -140,7 +146,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-6 px-5 black">
+    <div id="about" class="container-fluid py-6 px-5 black">
         <div class="row g-5">
             <div class="col-lg-7">
                 <h1 class="display-5 text-uppercase mb-4 gold">We are <span class="gold">the Leader</span> in Construction Industry</h1>
@@ -172,7 +178,7 @@
     
 
     <!-- Services Start -->
-    <div class="container-fluid py-6 px-5 black">
+    <div id="services" class="container-fluid py-6 px-5 black">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4 gold">We Provide The Best Construction Services</h1>
         </div>
@@ -261,7 +267,7 @@
 
 
     <!-- Appointment Start -->
-    <div class="container-fluid py-6 px-5 black">
+    <div id="contact" class="container-fluid py-6 px-5 black">
         <div class="row gx-5">
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <div class="mb-4">
@@ -310,7 +316,7 @@
 
 
     <!-- Portfolio Start -->
-    <div class="container-fluid py-6 px-5 black">
+    <div id="projects" class="container-fluid py-6 px-5 black">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4 gold">Some Of Our Popular Dream Projects</h1>
         </div>
@@ -419,7 +425,7 @@
 
 
     <!-- Team Start -->
-    <div class="container-fluid py-6 px-5 black">
+    <div id="team" class="container-fluid py-6 px-5 black">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4 gold">We Are Professional & Expert Workers</h1>
         </div>
@@ -526,7 +532,7 @@
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid py-6 px-5 black">
+    <div id="feedbacks" class="container-fluid py-6 px-5 black">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
             <h1 class="display-5 text-uppercase mb-4 gold">What Our Happy Cleints Say!!!</h1>
         </div>

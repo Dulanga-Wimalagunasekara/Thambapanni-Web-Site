@@ -63,6 +63,32 @@
         dots: false,
         loop: true,
     });
-    
+
+    $("#spnAbout").click(function() {
+        document.getElementById('team').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+
+    $("#spnService").click(function() {
+        document.getElementById('services').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+
+    $("#spnProjects").click(function() {
+        document.getElementById('projects').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+
+    $("#spnContact").click(function() {
+        document.getElementById('contact').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+
+    $("#spnFeedbacks").click(function() {
+        document.getElementById('feedbacks').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+
+    $("#spnHome").click(function() {
+        document.getElementById('carousel').scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+
+
+
 })(jQuery);
 

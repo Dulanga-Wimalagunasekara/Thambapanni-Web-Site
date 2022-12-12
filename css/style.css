@@ -2,7 +2,7 @@
 :root {
     --primary: #5a5a5a;
     --secondary: #FDBE33;
-    --light: #F4F6F8;
+    --light: gold;
     --dark: #040F28;
 }
 
@@ -276,4 +276,10 @@
 
 .black {
     background-color: black;
+}
+
+.itmSpan:hover {
+    cursor: pointer;
+    color: greenyellow !important;
+    scale: 1.1;
 }
