@@ -44,7 +44,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        topBar.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         return false;
     });
 
@@ -94,6 +94,26 @@
     $("#spnHome").click(function() {
         topBar.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
     });
+
+    $("#backToTop").click(function() {
+        topBar.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    });
+
+    // $("#devContact").click(function() {
+    //     Swal.fire({
+    //         title: 'You can contact us via +94712742787 anytime!',
+    //         showDenyButton: false,
+    //         showCancelButton: true,
+    //         confirmButtonText: 'Proceed With Browser',
+    //     }).then((result) => {
+    //         /* Read more about isConfirmed, isDenied below */
+    //         if (result.isConfirmed) {
+    //
+    //         }
+    //     })
+    // });
+
+
 
 
 
