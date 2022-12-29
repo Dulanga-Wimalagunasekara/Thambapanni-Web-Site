@@ -7,6 +7,7 @@
     const projects = document.getElementById('projects');
     const contact = document.getElementById('contact');
     const feedbacks = document.getElementById('feedbacks');
+    const carousel = document.getElementById('carousel');
 
     // Dropdown on mouse hover
     $(document).ready(function () {
@@ -92,26 +93,28 @@
     });
 
     $("#spnHome").click(function() {
-        topBar.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        window.scrollTo(0,0);
     });
 
-    $("#backToTop").click(function() {
-        topBar.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    $("#btnBackToTop").click(function() {
+        window.scrollTo(0,0);
     });
-
-    // $("#devContact").click(function() {
-    //     Swal.fire({
-    //         title: 'You can contact us via +94712742787 anytime!',
-    //         showDenyButton: false,
-    //         showCancelButton: true,
-    //         confirmButtonText: 'Proceed With Browser',
-    //     }).then((result) => {
-    //         /* Read more about isConfirmed, isDenied below */
-    //         if (result.isConfirmed) {
-    //
-    //         }
-    //     })
-    // });
+    
+    
+    
+    $(".devContact").click(function() {
+        Swal.fire({
+            title: 'You can contact us via +94712742787 anytime!',
+            showDenyButton: false,
+            showCancelButton: true,
+            confirmButtonText: 'Join WhatsApp',
+            confirmButtonColor: '#11c704'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                window.open('https://chat.whatsapp.com/JnM1oqXyefJHIYKYDWE4T2', '_blank');
+            }
+        })
+    });
 
 
 
