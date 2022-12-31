@@ -5,6 +5,8 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
+    --animate-duration: 800ms;
+    --animate-delay: 0.5s;
 }
 
 .cf:before,
@@ -355,6 +357,14 @@ ul a span{
     width: 95%;
     top: 39px;
     background-image: none!important;
+}
+
+
+
+#clickToRegister {
+    background-color: lawngreen;
+    border-radius: 20px;
+    border-color: aqua;
 }
 
 /* Department/ section colors */
