@@ -74,30 +74,37 @@
 
     $("#spnAbout").click(function() {
         team.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        window.focus();
     });
 
     $("#spnService").click(function() {
         services.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        window.focus();
     });
 
     $("#spnProjects").click(function() {
         projects.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        window.focus();
     });
 
     $("#spnContact").click(function() {
         contact.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        window.focus();
     });
 
     $("#spnFeedbacks").click(function() {
         feedbacks.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        window.focus();
     });
 
     $("#spnHome").click(function() {
         window.scrollTo(0,0);
+        window.focus();
     });
 
     $("#btnBackToTop").click(function() {
         window.scrollTo(0,0);
+        window.focus();
     });
     
     
