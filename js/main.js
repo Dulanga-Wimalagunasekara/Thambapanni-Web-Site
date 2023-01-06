@@ -45,7 +45,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        topBar.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+        window.scrollTo(0,0);
         return false;
     });
 
@@ -98,11 +98,6 @@
     });
 
     $("#spnHome").click(function() {
-        window.scrollTo(0,0);
-        window.focus();
-    });
-
-    $("#btnBackToTop").click(function() {
         window.scrollTo(0,0);
         window.focus();
     });
