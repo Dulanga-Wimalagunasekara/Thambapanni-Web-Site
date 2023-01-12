@@ -36,8 +36,8 @@
     $('.time').datetimepicker({
         format: 'LT'
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -47,7 +47,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        window.scrollTo(0,0);
+        window.scrollTo(0, 0);
         return false;
     });
 
@@ -74,41 +74,40 @@
         loop: true,
     });
 
-    $("#spnAbout").click(function() {
+    $("#spnAbout").click(function () {
         team.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         window.focus();
     });
 
-    $("#spnService").click(function() {
+    $("#spnService").click(function () {
         services.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         window.focus();
     });
 
-    $("#spnProjects").click(function() {
+    $("#spnProjects").click(function () {
         projects.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         window.focus();
     });
 
-    $("#spnContact").click(function() {
+    $("#spnContact").click(function () {
         contact.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         window.focus();
     });
 
-    $("#spnFeedbacks").click(function() {
+    $("#spnFeedbacks").click(function () {
         feedbacks.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         window.focus();
     });
 
-    $("#spnHome").click(function() {
-        window.scrollTo(0,0);
+    $("#spnHome").click(function () {
+        window.scrollTo(0, 0);
         window.focus();
     });
-    
-    
-    
-    $(".devContact").click(function() {
+
+
+    $(".devContact").click(function () {
         Swal.fire({
-            title: 'You can contact us via +94712742787 anytime!',
+            title: 'You can contact us via +94741077770 anytime!',
             showDenyButton: false,
             showCancelButton: true,
             confirmButtonText: 'Join WhatsApp',
@@ -120,8 +119,31 @@
         })
     });
 
+    const observser = new IntersectionObserver((entries) => {
+        entries.forEach(value => {
+            if (value.isIntersecting) {
+                value.target.classList.add('show');
+            } else {
+                value.target.classList.remove('show');
+            }
+        });
+    });
 
+    const elements = document.querySelectorAll('.hidden');
+    elements.forEach(value => observser.observe(value));
 
+    const imagesObserver = new IntersectionObserver((entries) => {
+        entries.forEach(value => {
+            if (value.isIntersecting) {
+                value.target.classList.add('imageIn');
+            } else {
+                value.target.classList.remove('imageIn');
+            }
+        });
+    });
+
+    const ourImages = document.querySelectorAll('.imageOut');
+    ourImages.forEach(value => imagesObserver.observe(value));
 
 
 })(jQuery);
